@@ -4,3 +4,15 @@ https://fxdocs.github.io/docs/html5/#_choicebox
 
 
 ref:
+
+(java:26713): Gdk-CRITICAL **: 11:35:39.602: gdk_x11_display_set_window_scale: assertion 'GDK_IS_X11_DISPLAY (display)' failed
+However, adding a -Djdk.gtk.version=2 to the VM arguments does the trick for me!
+
+
+Yes, right click the project. Click Run as then Run Configurations. 
+You can change the parameters passed to the JVM in the Arguments tab in 
+the VM Arguments box.
+That configuration can then be used as the default when running the project.
+
+
+https://github.com/openjfx/javafx-maven-plugin
