@@ -1,0 +1,24 @@
+1) Executar o SonarQube na pasta:
+   PS D:\projects\sonarqube-10.6.0.92116\bin\windows-x86-64> .\StartSonar.bat
+
+2) Acesse a pasta do projeto que contem o pom.xml e execute o comando:
+   D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="abcdef" -Dsonar.password="password"
+
+Quando a analise estiver completa apresentara o link para acessar o relatorio.
+ex:
+    ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=com.sl%3AJavaFX11-example
+
+
+
+Sdk utilidado para o teste:
+D:\projects\zulu17.52.17-ca-jdk17.0.12-win_x64
+
+C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot\
+D:\projects\zulu17.52.17-ca-jdk17.0.12-win_x64
+
+juliana wgxeTyQX/m+vr6Y38kE4AAPv6EryJo+HJdpFuTeVcdo=
+
+-Dsonar.login="abcdef" -Dsonar.login="password"
+
+D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="abcdef" -Dsonar.password="password"
+
