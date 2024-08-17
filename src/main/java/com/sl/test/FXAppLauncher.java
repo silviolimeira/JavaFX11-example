@@ -1,4 +1,4 @@
-package com.almasb.test;
+package com.sl.test;
 
 public class FXAppLauncher {
 

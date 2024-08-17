@@ -1,4 +1,4 @@
-package com.almasb.test;
+package com.sl.test;
 
 import java.util.ArrayList;
 import java.util.List;
