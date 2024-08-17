@@ -22,6 +22,8 @@ juliana wgxeTyQX/m+vr6Y38kE4AAPv6EryJo+HJdpFuTeVcdo=
 
 D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="abcdef" -Dsonar.password="password"
 
+ref: How to export sonarQube report - Free| Latest 2023 | Generate sonarQube report
+https://www.youtube.com/watch?v=w_CYGMjXBCw
 
 Desabilitar login de usuario 
 =============================
@@ -29,3 +31,8 @@ Force user authentication
 Forcing user authentication prevents anonymous users from accessing the SonarQube UI, or project data via the Web API. Some specific read-only Web APIs, including those required to prompt authentication, are still available anonymously.
 Disabling this setting can expose the instance to security risks.
 Key: sonar.forceAuthentication
+
+
+Necessario criar o projeto local no SonarQube e gerar o token
+mvn clean verify sonar:sonar -Dsonar.projectKey=somapdv -Dsonar.projectName='somapdv' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_ce600a7e14f706a06cd53a53f65673715ab3c49c 
+
