@@ -1,0 +1,8 @@
+[O que procurar nos commits anteriores]
+
+git log -SreadInts -- Main.java
+git log -SFoo --since=2009.1.1 --until=2010.1.1 -- path_containing_change
+
+git show 140651ee8d507d50dbeea298a3928d54b107b02f:src/Main.java
+
+git show b2e78de70e271728bebdc9457f53d1a781101fdc:src/Main.java
