@@ -15,9 +15,6 @@ import javafx.stage.Stage;
 import javafx.util.Pair;
 import javafx.util.StringConverter;
 
-/**
- * @author Almas Baimagambetov (almaslvl@gmail.com)
- */
 public class FXApp extends Application {
 	private final ChoiceBox<Pair<String,String>> assetClass = new ChoiceBox<>();
 
