@@ -18,9 +18,9 @@ D:\projects\zulu17.52.17-ca-jdk17.0.12-win_x64
 
 juliana wgxeTyQX/m+vr6Y38kE4AAPv6EryJo+HJdpFuTeVcdo=
 
--Dsonar.login="abcdef" -Dsonar.login="password"
+-Dsonar.login="admin" -Dsonar.password="123"
 
-D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="abcdef" -Dsonar.password="password"
+D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="admin" -Dsonar.password="123"
 
 ref: How to export sonarQube report - Free| Latest 2023 | Generate sonarQube report
 https://www.youtube.com/watch?v=w_CYGMjXBCw
@@ -35,4 +35,10 @@ Key: sonar.forceAuthentication
 
 Necessario criar o projeto local no SonarQube e gerar o token
 mvn clean verify sonar:sonar -Dsonar.projectKey=somapdv -Dsonar.projectName='somapdv' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_ce600a7e14f706a06cd53a53f65673715ab3c49c 
+D:\apache-maven-3.9.0\bin\mvn clean verify sonar:sonar -Dsonar.projectKey=javafx -Dsonar.projectName='somapdv' -Dsonar.host.url=http://localhost:9000 -Dsonar.login="admin" -Dsonar.password="123"
+
+$env:PATH="D:\Java\jdk-17.0.10+7\bin;" + $env:PATH
+$env:JAVA_HOME="D:\Java\jdk-17.0.10+7\"
+set PATH=D:\Java\jdk-17.0.10+7\bin;%PATH%;
+set JAVA_HOME=D:\Java\jdk-17.0.10+7\
 
