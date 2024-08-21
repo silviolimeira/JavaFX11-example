@@ -2,7 +2,7 @@
    PS D:\projects\sonarqube-10.6.0.92116\bin\windows-x86-64> .\StartSonar.bat
 
 2) Acesse a pasta do projeto que contem o pom.xml e execute o comando:
-   D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="abcdef" -Dsonar.password="password"
+   D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="admin" -Dsonar.password="123"
 
 Quando a analise estiver completa apresentara o link para acessar o relatorio.
 ex:
@@ -35,4 +35,6 @@ Key: sonar.forceAuthentication
 
 Necessario criar o projeto local no SonarQube e gerar o token
 mvn clean verify sonar:sonar -Dsonar.projectKey=somapdv -Dsonar.projectName='somapdv' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_ce600a7e14f706a06cd53a53f65673715ab3c49c 
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=somapdv -Dsonar.projectName='somapdv' -Dsonar.login="devs" -Dsonar.password="devteam"
 
