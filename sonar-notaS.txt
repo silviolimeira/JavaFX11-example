@@ -38,3 +38,4 @@ mvn clean verify sonar:sonar -Dsonar.projectKey=somapdv -Dsonar.projectName='som
 
 mvn clean verify sonar:sonar -Dsonar.projectKey=somapdv -Dsonar.projectName='somapdv' -Dsonar.login="devs" -Dsonar.password="devteam"
 
+$env:PATH="C:\Users\Silvio\zulu17.52.17-ca-jdk17.0.12-win_x64\bin;" + $env:PATH
